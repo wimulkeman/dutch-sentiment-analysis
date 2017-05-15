@@ -8,7 +8,9 @@ from pattern.nl import sentiment
 neutralText = "Het is een vrij rustige dag."
 positiveText = "Het product is mij zeer goed bevallen."
 # negativeText = "Het product voldeed niet aan mijn verwachtingen."
-negativeText = "Ik ben niet te spreken over de service. Ik verwacht dan ook als compensatie mijn geld terug."
+# negativeText = "Je reageert niet op een manier die mij gelukkig stemt"
+negativeText = "Diepbedroeft over de zeer gebrekkige service van deze onervaren werknemer, het ontslag van deze persoon zou mij zeer vrolijk maken"
+# negativeText = "Ik ben niet te spreken over de service. Ik verwacht dan ook als compensatie mijn geld terug. Dit is stom"
 
 contradictingText = "Dit is een voorbeeld van een overwegend positieve text over een negatief verhaal"
 

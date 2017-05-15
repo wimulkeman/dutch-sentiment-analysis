@@ -1,0 +1,13 @@
+{
+    "name": "wimulkeman/dutch-sentiment-analyse",
+    "description": "Sentiment analyse for texts",
+    "require": {
+        "guzzlehttp/guzzle": "6"
+    },
+    "authors": [
+        {
+            "name": "Wim Ulkeman",
+            "email": "wimulkeman@hotmail.com"
+        }
+    ]
+}
