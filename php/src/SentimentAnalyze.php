@@ -21,6 +21,11 @@ class SentimentAnalyze
     private $analyzedSentiment = '';
 
     /**
+     * @var float
+     */
+    private $sentimentScore = 0;
+
+    /**
      * @var AzureConnection
      */
     private $analyzer;
@@ -57,6 +62,8 @@ class SentimentAnalyze
             throw new \RuntimeException('The returned analyserScore should be a float value.');
         }
 
+        $this->sentimentScore = $analyserScore;
+
         if ($analyserScore < 0.4) {
             $this->analyzedSentiment = self::NEGATIVE_SENTIMENT;
         } elseif ($analyserScore < 0.65) {
@@ -88,4 +95,8 @@ class SentimentAnalyze
         return $this->analyzedSentiment;
     }
 
+    public function getSentimentScore()
+    {
+        return $this->sentimentScore;
+    }
 }

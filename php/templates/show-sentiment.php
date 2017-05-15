@@ -22,7 +22,7 @@ switch ($deducedSentiment) {
 </head>
 <body>
 <p>
-    Het ingeschatte sentiment is <?php echo $dutchSentimentTranslation; ?>.
+    Het ingeschatte sentiment is <?php echo $dutchSentimentTranslation; ?> met een score van <?php echo $sentimentAnalyzer->getSentimentScore(); ?>.
 </p>
 <?php
 if ($sentimentAnalyzer->isPositiveSentiment()) {
@@ -37,7 +37,13 @@ if ($sentimentAnalyzer->isPositiveSentiment()) {
 }
 ?>
 <p>
-    Probeer het <a href="sentiment-form.html">opnieuw</a>
+    Probeer het <a href="./">opnieuw</a>
+</p>
+<p>
+    De genaliseerde tekst was:
+</p>
+<p style="font-style: italic">
+    "<?php echo $_POST['text']; ?>"
 </p>
 </body>
 </html>
