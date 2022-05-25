@@ -2,7 +2,7 @@
     "name": "wimulkeman/dutch-sentiment-analyse",
     "description": "Sentiment analyse for texts",
     "require": {
-        "guzzlehttp/guzzle": "6.2.1"
+        "guzzlehttp/guzzle": "6.5.6"
     },
     "authors": [
         {
